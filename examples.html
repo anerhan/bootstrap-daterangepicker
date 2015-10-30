@@ -23,7 +23,7 @@
                     <label class="control-label" for="reservation">Reservation dates:</label>
                     <div class="controls">
                      <div class="input-prepend">
-                       <span class="add-on"><i class="glyphicon glyphicon-calendar icon-calendar"></i></span><input type="text" style="width: 200px" name="reservation" id="reservation" value="03/18/2013 - 03/23/2013" /> 
+                       <span class="add-on"><i class="glyphicon glyphicon-calendar icon-calendar"></i></span><input type="text" style="width: 200px" name="reservation" id="reservation" value="03/18/2013 - 03/23/2013" />
                      </div>
                     </div>
                   </div>
@@ -65,7 +65,7 @@
                });
                </script>
 
-            </div>            
+            </div>
 
             <h4>Options Usage Example</h4>
 
@@ -80,7 +80,7 @@
                $(document).ready(function() {
                   $('#reportrange').daterangepicker(
                      {
-                        startDate: moment().subtract('days', 29),
+                        startDate: moment().subtract(29, 'days'),
                         endDate: moment(),
                         minDate: '01/01/2012',
                         maxDate: '12/31/2014',
@@ -92,11 +92,11 @@
                         timePicker12Hour: true,
                         ranges: {
                            'Today': [moment(), moment()],
-                           'Yesterday': [moment().subtract('days', 1), moment().subtract('days', 1)],
-                           'Last 7 Days': [moment().subtract('days', 6), moment()],
-                           'Last 30 Days': [moment().subtract('days', 29), moment()],
+                           'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                           'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                           'Last 30 Days': [moment().subtract(29, 'days'), moment()],
                            'This Month': [moment().startOf('month'), moment().endOf('month')],
-                           'Last Month': [moment().subtract('month', 1).startOf('month'), moment().subtract('month', 1).endOf('month')]
+                           'Last Month': [moment().subtract(1,'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
                         },
                         opens: 'left',
                         buttonClasses: ['btn btn-default'],

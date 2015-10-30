@@ -670,8 +670,8 @@
         buildCalendar: function (month, year, hour, minute, side) {
 
             var firstDay = moment([year, month, 1]);
-            var lastMonth = moment(firstDay).subtract('month', 1).month();
-            var lastYear = moment(firstDay).subtract('month', 1).year();
+            var lastMonth = moment(firstDay).subtract(1, 'month').month();
+            var lastYear = moment(firstDay).subtract(1, 'month').year();
 
             var daysInLastMonth = moment([lastYear, lastMonth]).daysInMonth();
 
