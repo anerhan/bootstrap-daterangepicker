@@ -54,15 +54,15 @@
         this.separator = ' - ';
 
         this.locale = {
-            applyLabel: 'Apply',
-            cancelLabel: 'Cancel',
-            fromLabel: 'From',
-            toLabel: 'To',
-            weekLabel: 'W',
-            customRangeLabel: 'Custom Range',
-            daysOfWeek: moment()._lang._weekdaysMin.slice(),
-            monthNames: moment()._lang._monthsShort.slice(),
-            firstDay: moment()._lang._week.dow
+          format: 'MM/DD/YYYY',
+          separator: ' - ',
+          applyLabel: 'Apply',
+          cancelLabel: 'Cancel',
+          weekLabel: 'W',
+          customRangeLabel: 'Custom Range',
+          daysOfWeek: moment.weekdaysMin(),
+          monthNames: moment.monthsShort(),
+          firstDay: moment.localeData().firstDayOfWeek()
         };
 
         this.cb = function () { };
