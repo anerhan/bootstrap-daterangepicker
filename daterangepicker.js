@@ -54,10 +54,10 @@
         this.separator = ' - ';
 
         this.locale = {
-          format: 'MM/DD/YYYY',
-          separator: ' - ',
           applyLabel: 'Apply',
           cancelLabel: 'Cancel',
+          fromLabel: 'From',
+          toLabel: 'To',
           weekLabel: 'W',
           customRangeLabel: 'Custom Range',
           daysOfWeek: moment.weekdaysMin(),
